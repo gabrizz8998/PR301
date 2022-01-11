@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <video id=video src="Pantera_Rosa.mp4"></video>
+        <p>
+            <img id=play src="iconos/icons8-circled-play-50.png" />
+            <img id=pausa src="iconos/icons8-pause-50.png" />     
+            <img id=mute src="iconos/icons8-mute-50.png" />
+            <span id="tiempo">0:00</span>
+        </p>
+    </div>
+</body>
+
+<script>
+
+    let play = document.getElementById("play");
+    let pausa = document.getElementById("pausa");
+    let mute = document.getElementById("mute");
+
+    let pausado=true;
+
+    play.addEventListener("click",()=>{video.play(); pausado=false;},false);
+    pausa.addEventListener("click",()=>{video.pause();pausado=true},false);
+    mute.addEventListener("click",()=>{video.muted = true;},false);
+
+    
+    
+</script>
+</html>
